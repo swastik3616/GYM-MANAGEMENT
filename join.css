@@ -1,0 +1,32 @@
+form {
+    display:grid;
+    flex-direction:row;
+    align-items: center;
+    background-color:darkgrey;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+}
+
+
+  input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }

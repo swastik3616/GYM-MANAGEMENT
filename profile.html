@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webite Fitness & Gym</title>
+	<link rel="stylesheet"  href="../static/css/style.css">
+</head>
+<body>
+   {% with messages = get_flashed_messages() %}
+         {% if messages %}
+               {% for message in messages %}
+                    <p>{{ message }}</p>
+               {% endfor %}
+         {% endif %}
+      {% endwith %}
+<header>
+	<nav>
+		<div class="logo">
+			<span id="blu">BOX FITNESS</span>
+		</div>
+		<div class="menu">
+				<a href="#">Home</a>
+			<a href="#about">About</a>
+				<a href="#services">Services</a>
+			<a href="#members">Client</a>
+			<a href="#work">Our Work</a>
+			<a href="#contact">Contact</a>
+			<a href="/profile1">Profile</a>
+		</div>
+
+		<div class="icon">
+			<a href="https://www.facebook.com/campaign/landing.php?campaign_id=15461201666&extra_1=s%7Cc%7C589521732875%7Cb%7Cfacebook%20%27%7C&placement=&creative=589521732875&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D15461201666%26adgroupid%3D130924380175%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9062127%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIksKLlf7B_QIVQUUrCh3MjQplEAAYASAAEgL8N_D_BwE"><img src="../static/images/facebook.png"></a>
+			<a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13530338610&extra_1=s|c|547419127631|e|instagram%20%27|&placement=&creative=547419127631&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13530338610%26adgroupid%3D126262414014%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D9062127%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIj9rxiP_B_QIVCSQrCh0PiQtAEAAYASAAEgLbuvD_BwE"><img src="../static/images/in.png"></a>
+		</div>
+
+	</nav>
+
+	<div class="container">
+		<div class="left">
+			<img src="../static/images/banner.png">
+		</div>
+		<div class="right">
+		<h1>BE THE CHANGE</h1>
+		<p>Exercise not only changes your body. It changes your mind, your attitude, and your mood.</p>
+		<button  class="btn"><a href="../templates/join.html">Join us</a></button>
+
+		</div>
+	</div>
+</header>
+<section id="about">
+	<div class="about-row">
+		<div class="about-left-col">
+			<h1> About <span style="color:#74b9ff;">Us</span></h1>
+			<p>Our experienced trainers are from Hyderabad and Pune. They are here to help you every step of the way, providing personalized workout plans and guidance to ensure you get the most out of your gym experience.
+			</p>
+		</div>
+		<div class="about-right-col">
+			<img src="../static/images/downside-hotel-gyms-2.jpg">
+			<img src="../static/images/img2.png">
+		</div>
+	</div>
+</section>
+
+<section id="services">
+	<div class="services-info">
+			<h1>Our <span class="blu">Services</span></h1>
+	<p>What we Provide</p>
+	</div>
+	<div class="services-row">
+		<div class="services-box">
+		<!--		<i class="fa fa-suitcase"></i>  -->
+				<h2>Cardio</h2>
+		<p></p>
+		</div>
+
+		<div class="services-box">
+			<!--	<i class="fa fa-suitcase" aria-hidden="true"></i>   -->
+				<h2>Body Transformation</h2>
+		</div>
+
+		<div class="services-box">
+				<h2>Weight Loss</h2>
+		</div>
+
+		<div class="services-box">
+				<h2>Weight Gain</h2>
+		</div>
+
+		<div class="services-box">
+				<h2>Yoga</h2>
+		</div>
+
+		<div class="services-box">
+				<h2>Aerobic</h2>
+		</div>
+
+	</div>
+</section>
+
+
+<section id="members">
+		<div class="services-info">
+			<h1>Our <span class="blu">Members</span></h1>
+	<p>What our gym member says</p>
+</div>
+
+
+<div class="member-card">
+
+
+	<img src="../static/images/member.png">
+	<p>
+ 			From Hyderabad,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.From Hyderabad,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.
+	</p>
+	<h2>* Maria Sharapova, Gym Client</h2>
+
+	<img src="../static/images/icon.png">
+</div>
+</section>
+
+<section id="work">
+		<div class="services-info">
+			<h1>Our <span class="blu">Works</span></h1>
+	<p>What we Provide</p>
+</div>
+<div class="services-row">
+	<div class="work-box">
+		<img src="../static/images/ex1.jpg">
+	</div>
+	<div class="work-box">
+		<img src="../static/images/ex2.jpg">
+	</div>
+	<div class="work-box">
+		<img src="../static/images/ex3.jpg">
+	</div>
+	<div class="work-box">
+		<img src="../static/images/ex4.jpg">
+	</div>
+	<div class="work-box">
+		<img src="../static/images/ex5.jpg">
+	</div>
+	<div class="work-box">
+		<img src="../static/images/ex6.jpg">
+	</div>
+</div>
+</section>
+
+<section id="contact">
+		<div class="services-info">
+			<h1>Get in<span class="blu">Touch</span></h1>
+	<p> We are Available</p>
+</div>
+
+
+	<!--
+<div class="contact-row">
+
+	<div class="contact-left-col">
+		<div class="form">
+			<form action="/action_page.php">
+			<input type="text" name="" placeholder="E-mail">
+			<input type="text" name="" placeholder="Subject"><br>
+			<textarea rows="10" cols="40" placeholder="Feedback Message"></textarea>
+			<br> <button class="c_btn">Send</button>
+		</form>
+		</div>
+	</div>                         -->
+
+		<div class="contact-col">
+			<h1><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail</h1> <p>boxfitness123@gmail.com</p><br>
+ 			<h1><i class="fa fa-phone" aria-hidden="true"></i> Mobile</h1><p>823944147, 823944140</p>
+ 			<br>
+ 			<h1><i class="fa fa-location-arrow" aria-hidden="true"></i> Address</h1>
+ 			 <p>floor no. 4<br>
+				Himayat Nagar Road, 3-6-0196, Hyderabad, Telangana-500029
+ 			 </p>
+		</div>
+<!--  </div>  -->
+
+
+</section>
+
+
+<section id="footer">
+	<h1>B<span class="blu">F</span></h1>
+
+	<p> BOX FITNESS,Hyderabad,India </p>
+	<img src="../static/images/icon.png">
+
+</section>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Gym management Button</title>
+  <link rel="stylesheet" href="../static/css/styl.css">
+</head>
+<body>
+    <div class= container >
+        <button type="submit" class="btn" onclick="openPopup()">i am not a robot</button>
+        <div class="popup" id="popup">
+        <img src="../static/images/404-tick.png">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted to our Box fitness.
+           Thank for your patience!</p>
+        <button type="button" onclick="closePopup()"><a href="/index">Ok</a></button>
+        </div>
+        </div>
+</body>
+<script>
+  let popup = document.getElementById("popup");
+  function openPopup()
+  {
+  popup.classList.add("open-popup");
+  }
+  function closePopup()
+  {
+popup.classList.remove("open-popup");
+  }
+</script>
+</body>
+</html>
+
